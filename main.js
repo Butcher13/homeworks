@@ -8,7 +8,7 @@
             if (placeOfResidence === null) {
                 alert(`Шкода, що Ви не захотіли вказати місто, в якому живете`);
             } else {
-                placeOfResidence = placeOfResidence.toLowerCase();
+                placeOfResidence;
             }
             let country;
             switch (placeOfResidence) {
@@ -50,7 +50,7 @@
                 } else if (Boolean(champion)) {
                     alert(`${2023 - birthYear} років. Ви живете у місті ${placeOfResidence}. Круто! Хочете стати ${champion}?`);
                 } else {
-                    alert(`${2023 - birthYear} років. Ви живете у місті ${placeOfResidence}.`);
+                    alert(`${2023 - birthYear} років. Ви живете у місті ${placeOfResidence}. Ваш улюблений вид спорту ${sport}`);
                 }
             }
         }
