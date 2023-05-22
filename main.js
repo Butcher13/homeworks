@@ -1,17 +1,17 @@
 
         function submitUserInfo() {
-            const birthYear = prompt('Будь ласка, вкажіть рік Вашого народження', '1990');
+            const birthYear = prompt('Вкажіть, будь ласка, рік Вашого народження');
             if (birthYear === null) {
                 alert(`Шкода, що Ви не захотіли ввести свій рік народження`);
             }
-            let residenceCity = prompt('Будь ласка, вкажіть місто, в якому Ви живете');
-            if (residenceCity === null) {
+            let placeOfResidence = prompt('Будь ласка, вкажіть місто, в якому Ви живете');
+            if (placeOfResidence === null) {
                 alert(`Шкода, що Ви не захотіли вказати місто, в якому живете`);
             } else {
-                residenceCity = residenceCity.toLowerCase();
+                placeOfResidence = placeOfResidence.toLowerCase();
             }
             let country;
-            switch (residenceCity) {
+            switch (placeOfResidence) {
                 case 'київ':
                     country = 'України';
                     break;
@@ -40,7 +40,7 @@
                     champion = 'Майк Тайсон';
                     break;
             }
-            if (birthYear === null || residenceCity === null || sport === null) {
+            if (birthYear === null || placeOfResidence === null || sport === null) {
                 alert('Недостатньо даних');
             } else {
                 if (Boolean(champion) && Boolean(country)) {
@@ -48,9 +48,9 @@
                 } else if (Boolean(country)) {
                     alert(`${2023 - birthYear} років. Ви живете у столиці ${country}.`);
                 } else if (Boolean(champion)) {
-                    alert(`${2023 - birthYear} років. Ви живете у місті ${residenceCity}. Круто! Хочете стати ${champion}?`);
+                    alert(`${2023 - birthYear} років. Ви живете у місті ${placeOfResidence}. Круто! Хочете стати ${champion}?`);
                 } else {
-                    alert(`${2023 - birthYear} років. Ви живете у місті ${residenceCity}.`);
+                    alert(`${2023 - birthYear} років. Ви живете у місті ${placeOfResidence}.`);
                 }
             }
         }
