@@ -8,7 +8,7 @@
             if (placeOfResidence === null) {
                 alert(`Шкода, що Ви не захотіли вказати місто, в якому живете`);
             } else {
-                placeOfResidence;
+                placeOfResidence = placeOfResidence.toLowerCase(); //як зробити щоб зберігалась велика буква в назві міста?
             }
             let country;
             switch (placeOfResidence) {
