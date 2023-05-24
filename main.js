@@ -1,15 +1,22 @@
 let array = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47] 
-console. log (array)
+document.write(array + "<br>");
+
+//Знайти мінімальний елемент масиву та його порядковий номер.
 
 let minimum = Math.min(...array);//знаходимо мінімальне значення 
 let positionMinimum = array.indexOf(minimum); // знаходимо його індекс (можна +1 якщо рахуваты з першого числа)
 
-console.log(minimum, positionMinimum);
+document.write("Мінімальний елемент масиву: " + minimum, " та його порядковий номер: " + positionMinimum + "<br>");;
+
+
+//Знайти максимальний елемент масиву та його порядковий номер.
 
 let maximum = Math.max(...array);
 let positionMaximum = array.indexOf(maximum)
-console.log("Найбільше значення : " + maximum, "та його порядковий номер: " + positionMaximum )
+document.write("Максимальний елемент масиву : " + maximum, " та його порядковий номер: " + positionMaximum + "<br>" )
 
+
+//Визначити кількість негативних елементів.
 let count = 0; // змінна для підрахунку з значенням 0
 
 for (let i = 0; i < array.length; i++) {//i < array.length для того, щоб цикл повторювався доти доки і менше довжини масиву. Як тільки => цикл завершуються. i++ = i+1 після кожної ітерації
@@ -18,9 +25,10 @@ for (let i = 0; i < array.length; i++) {//i < array.length для того, що
   }
 }
 
-console.log("Кількість негативних елементів масиву:", count);
+document.write("Кількість негативних елементів масиву: ", count + "<br>");
 
 //Знайти кількість непарних позитивних елементів.
+
 let countOfOdd = 0; 
 
 for (let i = 0; i < array.length; i++) { 
@@ -28,7 +36,7 @@ for (let i = 0; i < array.length; i++) {
     countOfOdd++; 
   }
 }
-console.log("Кількість непарних позитивних елементів:", countOfOdd);
+document.write("Кількість непарних позитивних елементів: ", countOfOdd + "<br>");
 
 
 //Знайти кількість парних позитивних елементів
@@ -40,7 +48,7 @@ for (let i = 0; i < array.length; i++) {
   }
 }
 
-console.log("Кількість парних позитивних елементів:", countOfEvenPosit); 
+document.write("Кількість парних позитивних елементів: ", countOfEvenPosit + "<br>"); 
 
 //Знайти суму парних позитивних елементів
 
@@ -50,7 +58,7 @@ for (let i = 0; i < array.length; i++) {
     sumEvenPos += array[i];
 }
 }
-console.log("Сума парних позитивних елементів:", sumEvenPos); 
+document.write("Сума парних позитивних елементів: ", sumEvenPos + "<br>"); 
 
 //Знайти суму непарних позитивних елементів.
 let summOddPositive = 0;
@@ -60,7 +68,7 @@ for (let i = 0; i < array.length; i++) {
 
   }
 }
-console.log("Сума не парних позитивних елементів:", summOddPositive)
+document.write("Сума не парних позитивних елементів: ", summOddPositive + "<br>")
 
 //Знайти добуток позитивних елементів.
 
@@ -72,7 +80,7 @@ for (let i = 0; i < array.length; i++) {
 
   }
 }
-console.log("Добуток:", multiplyPositive) 
+document.write("Добуток: ", multiplyPositive + "<br>") 
 
 //Знайти найбільший серед елементів масиву, ост альні обнулити.
 
@@ -85,5 +93,5 @@ for (let i = 0; i < array.length; i++) {
   }
 }
 
-console.log(array);
+document.write(array + "<br>");
 
